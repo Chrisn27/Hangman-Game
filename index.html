@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Hangman Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/resets.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="container">
+	
+	<div id="title">
+		<img src="assets/images/title.jpg" alt="awesome title image">
+		<h1>Hang Man Game</h1>
+	</div>
+
+	<div id="picture">
+	<!--Placeholder-->
+	</div>
+
+	<div id="gameplay">
+		<img src="assets/images/main.jpg">
+		<div id="gameText">
+			<p id="instructions">PRESS ANY KEY TO GET STARTED: </p>	
+			<p id="wins">Wins: 0</p>
+			<p id="losses">Losses: 0</p>
+			<p id="currentword">Current Word:</p>
+			<p id="targetword"></p>
+			<p>Number of guesses remaining:</p>
+			<p id="remaining"></p>
+			<p>Letters already guessed: </p>
+			<p id="guessedLetters"></p>
+		</div>
+	</div>
+
+</div>
+
+</body>
+
+<script src="assets/javascript/game.js"></script>
+
+</html>
