@@ -10,26 +10,14 @@ var wordBlanks = [];
 var gameWord;
 var dummy = true;
 
-    var reset = function() {
-
-	  	guessesLeft = 10;
-	  	userGuesses = [];
-
-	}
-    
-    window.onload = function() {
-    startGame();
-    }
-
     // function called on load to
 
     function reset () {
         guessesLeft = 10;
         userGuesses = [];
         wordBlanks = [];
-        gameWord;
-        startGame();
-    }
+        startGame();    
+    };
 
     function startGame() {
         
@@ -42,7 +30,6 @@ var dummy = true;
         }
 
         // Determines which key was pressed by user
-};
 
         document.onkeydown = function(event) {
         
@@ -67,17 +54,17 @@ var dummy = true;
 
 
                 if (wordBlanks.join("") == gameWord) {
-                    alert("You win!, the word was " + gameWord);
+                    alert("You win!  The word was " + gameWord);
                     wins++;
                     reset();
                 }
 
-                }  else {
+                } else { 
 
                 guessesLeft--;
 
                 if (guessesLeft < 0) {
-                    alert("You lose!");
+                    alert("You lose!  The word was " + gameWord);
                     losses++;
                     reset();   
                 }
@@ -98,5 +85,7 @@ var dummy = true;
     
             }
         };
+};
 
+startGame();
           
